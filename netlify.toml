@@ -1,0 +1,10 @@
+[[headers]]
+  for = "/*.wasm"
+  [headers.values]
+    Content-Type = "application/wasm"
+    Content-Encoding = "br"  # Brotli圧縮の場合
+
+[[headers]]
+  for = "/*.br"
+  [headers.values]
+    Content-Encoding = "br"
